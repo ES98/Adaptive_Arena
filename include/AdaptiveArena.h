@@ -10,6 +10,8 @@
 
 namespace AdaptiveArena 
 {
+    class InternalResource; // Forward declaration
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Resource Class
     // std::pmr::memory_resource를 래핑하거나 상속받아 지능형 메모리 풀 기능을 제공하는 주체입니다.
@@ -21,6 +23,11 @@ namespace AdaptiveArena
         // Resource 특유의 추가 기능 인터페이스 (예: Telemetry 제어)
         virtual void ResetLearning() = 0;
         virtual void SaveStatistics() = 0;
+
+        // Telemetry Getters
+        virtual size_t GetCurrentUsage() const = 0;
+        virtual size_t GetPeakUsage() const = 0;
+        virtual size_t GetPredictedSize() const = 0;
     };
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,18 +81,7 @@ namespace AdaptiveArena
          * @return std::unique_ptr<Resource> 생성된 자원 객체
          * @throw  std::runtime_error 필수 설정 누락 시 발생
          */
-        std::unique_ptr<Resource> Build()
-        {
-            // Zero-Trust Validation
-            if (m_secretKey.empty())
-            {
-                throw std::runtime_error("Secret key is required for integrity verification.");
-            }
-
-            // TODO: 실제 Resource 구현체(InternalResource)를 생성하여 반환
-            // 현재는 인터페이스 정의 단계이므로 구현체 부재
-            return nullptr;
-        }
+        std::unique_ptr<Resource> Build();
 
     private:
         std::string m_secretKey;

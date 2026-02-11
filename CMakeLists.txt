@@ -27,18 +27,37 @@ FetchContent_Declare(
     GIT_TAG        docking
 )
 
-FetchContent_MakeAvailable(imgui)
+FetchContent_Declare(
+    glfw
+    GIT_REPOSITORY https://github.com/glfw/glfw.git
+    GIT_TAG        3.3.8 # Stable version
+)
+
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+
+FetchContent_MakeAvailable(imgui glfw)
 
 # Manually define imgui target because it doesn't provide a native CMakeLists.txt
 set(IMGUI_DIR ${imgui_SOURCE_DIR})
-add_library(imgui STATIC
+set(IMGUI_SOURCES
     ${IMGUI_DIR}/imgui.cpp
     ${IMGUI_DIR}/imgui_draw.cpp
     ${IMGUI_DIR}/imgui_tables.cpp
     ${IMGUI_DIR}/imgui_widgets.cpp
     ${IMGUI_DIR}/imgui_demo.cpp
+    # Backends
+    ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
 )
-target_include_directories(imgui PUBLIC ${IMGUI_DIR})
+
+add_library(imgui STATIC ${IMGUI_SOURCES})
+target_include_directories(imgui PUBLIC 
+    ${IMGUI_DIR}
+    ${IMGUI_DIR}/backends
+    ${glfw_SOURCE_DIR}/include
+)
 
 # Include directories
 include_directories(include)
@@ -46,10 +65,17 @@ include_directories(include)
 # Sources
 set(SOURCE_FILES
     src/main.cpp
+    src/AdaptiveArena.cpp
+    src/LearningEngine.cpp
+    src/Visualizer.cpp
 )
 
 # Executable
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
 # Link libraries
-target_link_libraries(${PROJECT_NAME} PRIVATE imgui)
+target_link_libraries(${PROJECT_NAME} PRIVATE 
+    imgui 
+    glfw
+    opengl32
+)
