@@ -38,6 +38,11 @@ namespace AdaptiveArena
         virtual size_t GetPeakUsage() const = 0;
         virtual size_t GetPredictedSize() const = 0;
 
+        // Performance Metrics
+        virtual double GetLastAllocationLatencyNS() const = 0;
+        virtual double GetAverageThroughputGBs() const { return 0.0; }
+        virtual bool IsPoolWarmedUp() const { return false; }
+
         // Ultrasound Mode Specific Telemetry (Optional for Generic)
         virtual size_t GetRingBufferSize() const { return 0; }
         virtual size_t GetRingBufferOccupancy() const { return 0; }

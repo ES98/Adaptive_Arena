@@ -70,6 +70,9 @@ namespace AdaptiveArena
         size_t GetRingBufferOccupancy() const override { return GetCurrentLag(); }
         size_t GetPredictedSlotCount() const override;
 
+        double GetAverageThroughputGBs() const override { return m_avgThroughputGBs; }
+        bool IsPoolWarmedUp() const override { return m_slotCount >= 4; }
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // PMR Overrides (Internal Logic)
     protected:
@@ -101,6 +104,11 @@ namespace AdaptiveArena
         std::atomic<size_t> m_slotCount;
         std::atomic<size_t> m_writeIndex;
         std::atomic<size_t> m_readIndex;
+
+        // Monitoring
+        std::atomic<size_t> m_totalBytesProcessed;
+        double m_avgThroughputGBs;
+        std::chrono::steady_clock::time_point m_lastThroughputCheck;
 
         // Monitoring thread or point-in-time check
         std::chrono::steady_clock::time_point m_lastAdaptTime;

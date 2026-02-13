@@ -21,8 +21,11 @@ namespace AdaptiveArena
         , m_slotCount(0)
         , m_writeIndex(0)
         , m_readIndex(0)
+        , m_totalBytesProcessed(0)
+        , m_avgThroughputGBs(0.0)
     {
         m_lastAdaptTime = std::chrono::steady_clock::now();
+        m_lastThroughputCheck = std::chrono::steady_clock::now();
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -65,6 +68,7 @@ namespace AdaptiveArena
     size_t UltrasoundArena::GetNextWriteIndex() 
     {
         AdaptToJitter();
+        m_totalBytesProcessed += (m_headerSize + m_payloadSize);
         return m_writeIndex.fetch_add(1) % m_slotCount;
     }
 
@@ -98,8 +102,22 @@ namespace AdaptiveArena
         size_t lag = GetCurrentLag();
         m_learningEngine.UpdateJitter(lag);
 
-        // 너무 자주 확장하지 않도록 1초 간격 체크
         auto now = std::chrono::steady_clock::now();
+        
+        // Throughput 계산 (1초 간격)
+        auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(now - m_lastThroughputCheck).count();
+        if (elapsed >= 1000) 
+        {
+            size_t bytes = m_totalBytesProcessed.exchange(0);
+            // Bytes to GB converter (1024^3)
+            double currentGBs = (static_cast<double>(bytes) / (1024.0 * 1024.0 * 1024.0)) / (elapsed / 1000.0);
+            
+            // EMA for throughput stability
+            m_avgThroughputGBs = 0.7 * currentGBs + 0.3 * m_avgThroughputGBs;
+            m_lastThroughputCheck = now;
+        }
+
+        // 너무 자주 확장하지 않도록 1초 간격 체크
         if (std::chrono::duration_cast<std::chrono::seconds>(now - m_lastAdaptTime).count() >= 1) 
         {
             size_t predicted = m_learningEngine.GetPredictedSlotCount();

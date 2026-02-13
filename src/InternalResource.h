@@ -27,6 +27,7 @@ namespace AdaptiveArena
             , m_hardLimit(hardLimit)
             , m_currentUsage(0)
             , m_peakUsage(0)
+            , m_lastLatencyNS(0.0)
             , m_learningEngine(0.5) // Alpha default 0.5
         {
             // 1. 기존 세션 데이터 복원
@@ -73,6 +74,8 @@ namespace AdaptiveArena
         size_t GetPeakUsage() const override { return m_peakUsage; }
         size_t GetPredictedSize() const override { return m_learningEngine.GetPredictedSize(); }
 
+        double GetLastAllocationLatencyNS() const override { return m_lastLatencyNS; }
+
     protected:
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /**
@@ -80,8 +83,13 @@ namespace AdaptiveArena
          */
         void* do_allocate(size_t bytes, size_t alignment) override 
         {
+            auto start = std::chrono::high_resolution_clock::now();
+
             // 1. 실제 할당 (업스트림: 기본 new 사용 - 테스트용)
             void* ptr = ::operator new(bytes, std::align_val_t{alignment});
+
+            auto end = std::chrono::high_resolution_clock::now();
+            double duration = std::chrono::duration<double, std::nano>(end - start).count();
 
             if (ptr) 
             {
@@ -93,6 +101,7 @@ namespace AdaptiveArena
                 {
                     m_peakUsage = m_currentUsage;
                 }
+                m_lastLatencyNS = duration;
             }
 
             return ptr;
@@ -134,6 +143,7 @@ namespace AdaptiveArena
         std::mutex m_mutex;
         size_t m_currentUsage;
         size_t m_peakUsage;
+        double m_lastLatencyNS;
 
         LearningEngine m_learningEngine;
     };

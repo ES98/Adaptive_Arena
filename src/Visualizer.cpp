@@ -116,6 +116,7 @@ namespace AdaptiveArena
                 
                 size_t occupancy = arena->GetRingBufferOccupancy();
                 size_t predictedSlots = arena->GetPredictedSlotCount();
+                double throughput = arena->GetAverageThroughputGBs();
 
                 ImGui::Columns(2, "RingColumns");
                 ImGui::Text("Total Slots:"); ImGui::NextColumn(); ImGui::Text("%zu", totalSlots); ImGui::NextColumn();
@@ -123,7 +124,7 @@ namespace AdaptiveArena
                 ImGui::Text("Current Lag:"); ImGui::NextColumn(); 
                 ImGui::TextColored(occupancy > totalSlots * 0.8 ? ImVec4(1,0,0,1) : ImVec4(1,1,1,1), "%zu", occupancy); 
                 ImGui::NextColumn();
-                ImGui::Text("Predicted Slots:"); ImGui::NextColumn(); ImGui::Text("%zu (EMA)", predictedSlots); ImGui::NextColumn();
+                ImGui::Text("Throughput:"); ImGui::NextColumn(); ImGui::Text("%.2f GB/s", throughput); ImGui::NextColumn();
                 ImGui::Columns(1);
                 
                 // Jitter Graph
@@ -134,7 +135,21 @@ namespace AdaptiveArena
                 ImGui::PlotLines("##JitterGraph", jitterHistory.data(), (int)jitterHistory.size(), 0, "Processing Lag (Frames)", 0.0f, static_cast<float>(totalSlots), ImVec2(0, 80));
             }
 
-            // 2. Real-time Graph
+            // 2. Performance Benchmarks
+            ImGui::Spacing();
+            ImGui::Text("⚡ Performance Benchmarks:");
+            ImGui::Separator();
+            
+            double latencyNS = arena->GetLastAllocationLatencyNS();
+            ImGui::Text("Last Allocation Latency: %.1f ns", latencyNS);
+            
+            static std::vector<float> latencyHistory;
+            if (latencyHistory.size() > 100) latencyHistory.erase(latencyHistory.begin());
+            latencyHistory.push_back(static_cast<float>(latencyNS));
+
+            ImGui::PlotLines("##LatencyGraph", latencyHistory.data(), (int)latencyHistory.size(), 0, "Latency (ns)", 0.0f, 2000.0f, ImVec2(0, 80));
+
+            // 3. Real-time Graph
             ImGui::Spacing();
             ImGui::Text("Memory Telemetry (Real-time):");
             
