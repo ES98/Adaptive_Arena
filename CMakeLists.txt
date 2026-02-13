@@ -74,9 +74,24 @@ set(SOURCE_FILES
 # Executable
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
+
 # Link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE 
     imgui 
+    glfw
+    opengl32
+)
+
+# Benchmark Test
+add_executable(ultrasound_test 
+    tests/ultrasound_test.cpp
+    src/UltrasoundArena.cpp
+    src/LearningEngine.cpp
+    src/AdaptiveArena.cpp
+    src/Visualizer.cpp
+)
+target_link_libraries(ultrasound_test PRIVATE
+    imgui
     glfw
     opengl32
 )
