@@ -8,6 +8,7 @@
 #include "PersistenceManager.h"
 #include <atomic>
 #include <mutex>
+#include <shared_mutex>
 #include <iostream>
 
 namespace AdaptiveArena 
@@ -52,13 +53,13 @@ namespace AdaptiveArena
     public:
         void ResetLearning() override 
         {
-            std::lock_guard<std::mutex> lock(m_mutex);
+            std::unique_lock<std::shared_mutex> lock(m_sharedMutex);
             m_learningEngine.SetState(0);
         }
 
         void SaveStatistics() override 
         {
-            std::lock_guard<std::mutex> lock(m_mutex);
+            std::unique_lock<std::shared_mutex> lock(m_sharedMutex);
             // 이번 세션의 피크를 학습 엔진에 반영
             m_learningEngine.Update(m_peakUsage);
             
@@ -93,7 +94,7 @@ namespace AdaptiveArena
 
             if (ptr) 
             {
-                std::lock_guard<std::mutex> lock(m_mutex);
+                std::unique_lock<std::shared_mutex> lock(m_sharedMutex);
                 
                 // 2. Telemetry: 현재 및 피크 사용량 업데이트
                 m_currentUsage += bytes;
@@ -119,7 +120,7 @@ namespace AdaptiveArena
             ::operator delete(p, std::align_val_t{alignment});
 
             // 2. Telemetry: 현재 사용량 감소
-            std::lock_guard<std::mutex> lock(m_mutex);
+            std::unique_lock<std::shared_mutex> lock(m_sharedMutex);
             if (m_currentUsage >= bytes) 
             {
                 m_currentUsage -= bytes;
@@ -138,9 +139,10 @@ namespace AdaptiveArena
     protected:
         std::string m_secretKey;
         std::filesystem::path m_logPath;
-        size_t m_hardLimit;
+        size_t m_hardLimit; // Restored
 
-        std::mutex m_mutex;
+        // Monitor Lock (MRSW)
+        mutable std::shared_mutex m_sharedMutex; 
         size_t m_currentUsage;
         size_t m_peakUsage;
         double m_lastLatencyNS;

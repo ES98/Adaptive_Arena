@@ -8,6 +8,7 @@
 #include <vector>
 #include <atomic>
 #include <chrono>
+#include <shared_mutex> // Added for MRSW
 
 namespace AdaptiveArena 
 {
@@ -63,6 +64,16 @@ namespace AdaptiveArena
          * @brief  현재 큐에 쌓여있는 지연(Lag) 프레임 수를 반환합니다.
          */
         size_t GetCurrentLag() const;
+
+        /**
+         * @brief  Thread-Safe Accessor for Header (Reader Lock)
+         */
+        void* GetHeader(size_t index);
+
+        /**
+         * @brief  Thread-Safe Accessor for Payload (Reader Lock)
+         */
+        void* GetPayload(size_t index);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Telemetry Overrides

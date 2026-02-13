@@ -87,9 +87,30 @@ namespace AdaptiveArena
     // GetCurrentLag
     size_t UltrasoundArena::GetCurrentLag() const 
     {
+        // Atomic operations are thread-safe and don't strictly require shared_lock for just reading indices.
+        // However, if we wanted to ensure we are reading indices consistent with a specific buffer state, we could lock.
+        // For lag calculation, atomic load is sufficient and lock-free is better for performance.
         size_t w = m_writeIndex.load();
         size_t r = m_readIndex.load();
         return (w > r) ? (w - r) : 0;
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // GetHeader
+    void* UltrasoundArena::GetHeader(size_t index) 
+    {
+        std::shared_lock<std::shared_mutex> lock(m_sharedMutex);
+        if (index >= m_headers.size()) return nullptr;
+        return m_headers[index];
+    }
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // GetPayload
+    void* UltrasoundArena::GetPayload(size_t index)
+    {
+        std::shared_lock<std::shared_mutex> lock(m_sharedMutex);
+        if (index >= m_payloads.size()) return nullptr;
+        return m_payloads[index];
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -127,20 +148,42 @@ namespace AdaptiveArena
             size_t predicted = m_learningEngine.GetPredictedSlotCount();
             if (predicted > m_slotCount) 
             {
+                // Strict Resource Limits (Hard Limit)
+                size_t newSize = predicted * (m_headerSize + m_payloadSize);
+                if (newSize > m_hardLimit) 
+                {
+                    std::cerr << "[Ultrasound] Hard Limit Reached! Expansion rejected. Cap at " << m_slotCount << std::endl;
+                    return; 
+                }
+
                 // 실시간 확장: 새로운 슈퍼페이지 할당 및 슬롯 추가
-                std::lock_guard<std::mutex> lock(m_mutex);
+                // Writer Lock (Exclusive)
+                std::unique_lock<std::shared_mutex> lock(m_sharedMutex);
                 
                 size_t additional = predicted - m_slotCount;
                 for (size_t i = 0; i < additional; ++i) 
                 {
-                    m_headers.push_back(::operator new(m_headerSize));
-                    m_payloads.push_back(AllocatePinned(m_payloadSize));
+                    void* pHeader = ::operator new(m_headerSize, std::nothrow); // Allocation Failure Handling
+                    void* pPayload = AllocatePinned(m_payloadSize);
+
+                    if (!pHeader || !pPayload) 
+                    {
+                        std::cerr << "[Ultrasound] CRITICAL: Allocation Failed during expansion! Stopping." << std::endl;
+                        if (pHeader) ::operator delete(pHeader);
+                        if (pPayload) FreePinned(pPayload, m_payloadSize);
+                        break; // Stop expansion gracefully
+                    }
+
+                    m_headers.push_back(pHeader);
+                    m_payloads.push_back(pPayload);
                 }
                 
-                m_slotCount.store(predicted);
+                // Update count based on actual successful allocations
+                size_t actualSize = m_headers.size();
+                m_slotCount.store(actualSize);
                 m_lastAdaptTime = now;
 
-                std::cout << "[Ultrasound] Ring expanded. New total slots: " << predicted 
+                std::cout << "[Ultrasound] Ring expanded. New total slots: " << actualSize 
                           << " (Absorbing Jitter)" << std::endl;
             }
         }
