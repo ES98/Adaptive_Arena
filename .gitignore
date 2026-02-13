@@ -32,3 +32,6 @@ docs/experiment_log.md
 docs/project_info.md
 docs/style_sample.cpp
 docs/style_sample.h
+
+# Persistence and session data
+*.bin
