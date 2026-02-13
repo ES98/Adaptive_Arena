@@ -38,7 +38,7 @@ Adaptive Arena is a C++17 memory management framework designed to replace standa
 
 ### Build Instructions
 ```bash
-git clone https://github.com/PJS-Dev/AdaptiveArena.git
+git clone https://github.com/ES98/AdaptiveArena.git
 cd AdaptiveArena
 mkdir build && cd build
 cmake ..
