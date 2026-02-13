@@ -36,7 +36,8 @@ namespace AdaptiveArena
                 std::cout << "[Internal] Session loaded. Predicted peak: " << savedSize << " bytes." << std::endl;
             }
             
-            // TODO: m_learningEngine.GetPredictedSize()만큼 초기 풀 예약 로직 추가 예정
+            // Initial pool reservation will be dynamically handled by AdaptToJitter
+            // based on the Learning Engine's predictions.
         }
 
         virtual ~InternalResource() 
