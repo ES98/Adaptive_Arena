@@ -1,0 +1,1059 @@
+﻿  AdaptiveArena.cpp
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\AdaptiveArena.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,34): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2504: 'memory_resource': 기본 클래스를 정의하지 않았습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,41): error C2059: 구문 오류: '='
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,62): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(76,13): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory_resource(12): warning STL4038: The contents of <memory_resource> are available only with C++17 or later.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31): error C2665: 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(206,5):
+      'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)'일 수 있습니다.
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::wstring &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              원인: 'const int'에서 'const std::wstring'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+          and
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<wchar_t>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(197,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(193,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::string &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              원인: 'const int'에서 'const std::string'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+          and
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<char>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(185,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const char *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(211,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)': '__formal'의 템플릿 인수를 추론할 수 없습니다.
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(57,26):
+              'std::enable_if_t<false,int>': 별칭 템플릿을 특수화하지 못했습니다.
+      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+      인수 목록 '(const int, const int)'을(를) 일치시키는 동안
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(34,55): error C2065: 'data': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(34,69): error C2065: 'data': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,23): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,35): error C2039: 'exists': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,35): error C3861: 'exists': 식별자를 찾을 수 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31): error C2665: 'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(53,5):
+      'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::wstring &,std::ios_base::openmode,int)'일 수 있습니다.
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::wstring &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::wstring &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              원인: 'const int'에서 'const std::wstring'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+          and
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<wchar_t>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(44,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const wchar_t *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const wchar_t *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(40,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::string &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::string &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::string &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              원인: 'const int'에서 'const std::string'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+          and
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<char>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(31,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const char *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const char *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const char *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(58,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const _Ty &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const _Ty &,std::ios_base::openmode,int)': '__formal'의 템플릿 인수를 추론할 수 없습니다.
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(57,26):
+              'std::enable_if_t<false,int>': 별칭 템플릿을 특수화하지 못했습니다.
+      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+      인수 목록 '(const int, const int)'을(를) 일치시키는 동안
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(57,48): error C2065: 'outData': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(57,65): error C2065: 'outData': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,76): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,88): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,65): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,92): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,37): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,42): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,57): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(81,15): error C3668: 'AdaptiveArena::InternalResource::do_allocate': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(105,14): error C3668: 'AdaptiveArena::InternalResource::do_deallocate': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,14): error C3668: 'AdaptiveArena::InternalResource::do_is_equal': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(26,25): error C2065: 'logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(27,27): error C2065: 'hardLimit': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(26,15): error C2614: 'AdaptiveArena::InternalResource': 멤버 초기화가 잘못되었습니다. 'm_logPath'이(가) 기본 또는 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(34,42): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(65,42): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(84,52): error C2039: 'align_val_t': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(84,52): error C2065: 'align_val_t': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(110,39): error C2039: 'align_val_t': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(110,39): error C2065: 'align_val_t': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(126,29): error C2065: 'other': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\chrono(45,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/AdaptiveArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\AdaptiveArena.cpp(21,67): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\AdaptiveArena.cpp(26,68): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  LearningEngine.cpp
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/LearningEngine.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.cpp(12,24): error C2039: 'clamp': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(225,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.cpp(12,24): error C3861: 'clamp': 식별자를 찾을 수 없습니다.
+  main.cpp
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory_resource(12): warning STL4038: The contents of <memory_resource> are available only with C++17 or later.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,34): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2504: 'memory_resource': 기본 클래스를 정의하지 않았습니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,41): error C2059: 구문 오류: '='
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,62): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(76,13): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\Visualizer.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\Visualizer.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'imgui.h': No such file or directory
+  (소스 파일 'src/main.cpp'을(를) 컴파일하는 중)
+  
+  UltrasoundArena.cpp
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory_resource(12): warning STL4038: The contents of <memory_resource> are available only with C++17 or later.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,34): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2504: 'memory_resource': 기본 클래스를 정의하지 않았습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,41): error C2059: 구문 오류: '='
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,62): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(76,13): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\LearningEngine.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(26,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(44,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31): error C2665: 'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(206,5):
+      'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)'일 수 있습니다.
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::wstring &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::wstring &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              원인: 'const int'에서 'const std::wstring'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+          and
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<wchar_t>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(197,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const wchar_t *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(193,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const std::string &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::string &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              원인: 'const int'에서 'const std::string'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+          and
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<char>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(185,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const char *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const char *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(211,5):
+      또는       'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+          'std::basic_ofstream<char,std::char_traits<char>>::basic_ofstream(const _Ty &,std::ios_base::openmode,int)': '__formal'의 템플릿 인수를 추론할 수 없습니다.
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(57,26):
+              'std::enable_if_t<false,int>': 별칭 템플릿을 특수화하지 못했습니다.
+      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(28,31):
+      인수 목록 '(const int, const int)'을(를) 일치시키는 동안
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(34,55): error C2065: 'data': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(34,69): error C2065: 'data': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,23): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,35): error C2039: 'exists': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(20,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(46,35): error C3861: 'exists': 식별자를 찾을 수 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31): error C2665: 'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(53,5):
+      'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::wstring &,std::ios_base::openmode,int)'일 수 있습니다.
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::wstring &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::wstring &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              원인: 'const int'에서 'const std::wstring'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=wchar_t,
+              _Alloc=std::allocator<wchar_t>
+          ]
+          and
+          [
+              _Elem=wchar_t
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<wchar_t>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(44,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const wchar_t *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const wchar_t *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(40,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::string &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const std::string &,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const std::string &'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              원인: 'const int'에서 'const std::string'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string': 모든 인수 형식을 변환할 수 있는 오버로드된 함수가 없습니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(768,5):
+                  'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )'일 수 있습니다.
+          with
+          [
+              _Elem=char
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(const _Elem *const )': 인수 1을(를) 'const int'에서 'const _Elem *const '(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(1340,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)'
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+                      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                      'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(std::initializer_list<_Elem>,const _Alloc &)': 인수 1을(를) 'const int'에서 'std::initializer_list<_Elem>'(으)로 변환할 수 없습니다.
+          with
+          [
+              _Elem=char,
+              _Alloc=std::allocator<char>
+          ]
+          and
+          [
+              _Elem=char
+          ]
+                          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                          변환하려면 둘째 사용자 정의 변환 연산자 또는 생성자가 있어야 합니다.
+                  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring(798,5):
+                  또는       'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string(_Iter,_Iter,const _Alloc &)'
+          with
+          [
+              _Alloc=std::allocator<char>
+          ]
+                  C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+                  인수 목록 '(const int)'을(를) 일치시키는 동안
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(31,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const char *,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const char *,std::ios_base::openmode,int)': 인수 1을(를) 'const int'에서 'const char *'(으)로 변환할 수 없습니다.
+              C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,32):
+              정수 계열 형식에서 포인터 형식으로 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 괄호가 있는 함수 스타일 캐스트가 필요합니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(58,5):
+      또는       'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const _Ty &,std::ios_base::openmode,int)'
+          C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+          'std::basic_ifstream<char,std::char_traits<char>>::basic_ifstream(const _Ty &,std::ios_base::openmode,int)': '__formal'의 템플릿 인수를 추론할 수 없습니다.
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\fstream(57,26):
+              'std::enable_if_t<false,int>': 별칭 템플릿을 특수화하지 못했습니다.
+      C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(51,31):
+      인수 목록 '(const int, const int)'을(를) 일치시키는 동안
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(57,48): error C2065: 'outData': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\PersistenceManager.h(57,65): error C2065: 'outData': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,76): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,88): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,65): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(24,92): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,37): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,42): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,57): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(131,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(81,15): error C3668: 'AdaptiveArena::InternalResource::do_allocate': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(105,14): error C3668: 'AdaptiveArena::InternalResource::do_deallocate': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(124,14): error C3668: 'AdaptiveArena::InternalResource::do_is_equal': 재정의 지정자 'override'가 있는 메서드가 기본 클래스 메서드를 재정의하지 않았습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(26,25): error C2065: 'logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(27,27): error C2065: 'hardLimit': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(26,15): error C2614: 'AdaptiveArena::InternalResource': 멤버 초기화가 잘못되었습니다. 'm_logPath'이(가) 기본 또는 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(34,42): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(65,42): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(84,52): error C2039: 'align_val_t': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(84,52): error C2065: 'align_val_t': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(110,39): error C2039: 'align_val_t': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream(19,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(110,39): error C2065: 'align_val_t': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\InternalResource.h(126,29): error C2065: 'other': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\chrono(45,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.h(35,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/UltrasoundArena.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(14,49): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(14,61): error C2039: 'path': 'std'의 멤버가 아닙니다.
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm(225,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(14,38): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(14,65): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(17,39): error C2065: 'logPath': 선언되지 않은 식별자입니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(17,48): error C2065: 'hardLimit': 선언되지 않은 식별자입니다.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\UltrasoundArena.cpp(18,23): error C2065: 'gpuDirect': 선언되지 않은 식별자입니다.
+  Visualizer.cpp
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\Visualizer.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\Visualizer.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory_resource(12): warning STL4038: The contents of <memory_resource> are available only with C++17 or later.
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,34): error C3083: 'pmr': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2039: 'memory_resource': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(27,39): error C2504: 'memory_resource': 기본 클래스를 정의하지 않았습니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,37): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,49): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,26): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(74,53): error C2143: 구문 오류: ','이(가) '&' 앞에 없습니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,14): error C3083: 'filesystem': '::'의 왼쪽에 있는 기호는 형식이어야 합니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,26): error C2039: 'path': 'std'의 멤버가 아닙니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string(23,1):
+      'std' 선언을 참조하십시오.
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,31): error C3646: 'm_logPath': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,41): error C2059: 구문 오류: '='
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(126,62): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\include\AdaptiveArena.h(76,13): error C2065: 'm_logPath': 선언되지 않은 식별자입니다.
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\white_0ddhu16\Desktop\Projects\Adaptive_Arena\src\Visualizer.h(7,10): error C1083: 포함 파일을 열 수 없습니다. 'imgui.h': No such file or directory
+  (소스 파일 'src/Visualizer.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...

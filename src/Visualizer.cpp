@@ -81,13 +81,20 @@ namespace AdaptiveArena
         if (!arena) return;
 
         ImGui::SetNextWindowPos(ImVec2(10, 10), ImGuiCond_FirstUseEver);
-        ImGui::SetNextWindowSize(ImVec2(480, 400), ImGuiCond_FirstUseEver);
+        ImGui::SetNextWindowSize(ImVec2(520, 600), ImGuiCond_FirstUseEver);
 
         if (ImGui::Begin("🏟️ Adaptive Arena Dashboard")) 
         {
+            // 0. Mode Indicator
+            size_t totalSlots = arena->GetRingBufferSize();
+            bool isUltrasound = (totalSlots > 0);
+            
+            ImGui::TextColored(isUltrasound ? ImVec4(0.2f, 0.8f, 1.0f, 1.0f) : ImVec4(1.0f, 0.8f, 0.2f, 1.0f), 
+                              "Mode: %s", isUltrasound ? "Ultrasound RF (Zero-Copy)" : "Generic PMR");
+            ImGui::Separator();
+
             // 1. Statistics Summary
             ImGui::Text("System Status:");
-            ImGui::Separator();
             
             float currentMB = arena->GetCurrentUsage() / (1024.0f * 1024.0f);
             float peakMB = arena->GetPeakUsage() / (1024.0f * 1024.0f);
@@ -96,8 +103,36 @@ namespace AdaptiveArena
             ImGui::Columns(2, "StatsColumns");
             ImGui::Text("Current Usage:"); ImGui::NextColumn(); ImGui::Text("%.2f MB", currentMB); ImGui::NextColumn();
             ImGui::Text("Session Peak:"); ImGui::NextColumn(); ImGui::Text("%.2f MB", peakMB); ImGui::NextColumn();
-            ImGui::Text("EMA Prediction:"); ImGui::NextColumn(); ImGui::Text("%.2f MB", predictedMB); ImGui::NextColumn();
+            if (!isUltrasound) {
+                ImGui::Text("EMA Prediction:"); ImGui::NextColumn(); ImGui::Text("%.2f MB", predictedMB); ImGui::NextColumn();
+            }
             ImGui::Columns(1);
+
+            if (isUltrasound) 
+            {
+                ImGui::Spacing();
+                ImGui::Text("Ring Buffer (Jitter Control):");
+                ImGui::Separator();
+                
+                size_t occupancy = arena->GetRingBufferOccupancy();
+                size_t predictedSlots = arena->GetPredictedSlotCount();
+
+                ImGui::Columns(2, "RingColumns");
+                ImGui::Text("Total Slots:"); ImGui::NextColumn(); ImGui::Text("%zu", totalSlots); ImGui::NextColumn();
+                ImGui::Text("Super-Pages:"); ImGui::NextColumn(); ImGui::Text("%zu", totalSlots); ImGui::NextColumn();
+                ImGui::Text("Current Lag:"); ImGui::NextColumn(); 
+                ImGui::TextColored(occupancy > totalSlots * 0.8 ? ImVec4(1,0,0,1) : ImVec4(1,1,1,1), "%zu", occupancy); 
+                ImGui::NextColumn();
+                ImGui::Text("Predicted Slots:"); ImGui::NextColumn(); ImGui::Text("%zu (EMA)", predictedSlots); ImGui::NextColumn();
+                ImGui::Columns(1);
+                
+                // Jitter Graph
+                static std::vector<float> jitterHistory;
+                if (jitterHistory.size() > 100) jitterHistory.erase(jitterHistory.begin());
+                jitterHistory.push_back(static_cast<float>(occupancy));
+                
+                ImGui::PlotLines("##JitterGraph", jitterHistory.data(), (int)jitterHistory.size(), 0, "Processing Lag (Frames)", 0.0f, static_cast<float>(totalSlots), ImVec2(0, 80));
+            }
 
             // 2. Real-time Graph
             ImGui::Spacing();
@@ -110,18 +145,18 @@ namespace AdaptiveArena
             }
             m_usageHistory.push_back(currentMB);
 
-            ImGui::PlotLines("##UsageGraph", m_usageHistory.data(), (int)m_usageHistory.size(), 0, nullptr, 0.0f, peakMB * 1.2f, ImVec2(0, 150));
+            ImGui::PlotLines("##UsageGraph", m_usageHistory.data(), (int)m_usageHistory.size(), 0, "Usage (MB)", 0.0f, peakMB * 1.2f + 1.0f, ImVec2(0, 120));
 
             // 3. Actions
             ImGui::Spacing();
             ImGui::Separator();
-            if (ImGui::Button("Reset Learning State", ImVec2(200, 30))) 
+            if (ImGui::Button("Reset Learning State", ImVec2(245, 30))) 
             {
                 arena->ResetLearning();
             }
 
             ImGui::SameLine();
-            if (ImGui::Button("Force Save Stats", ImVec2(200, 30))) 
+            if (ImGui::Button("Force Save Stats", ImVec2(245, 30))) 
             {
                 arena->SaveStatistics();
             }

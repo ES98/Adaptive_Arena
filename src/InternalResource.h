@@ -126,7 +126,7 @@ namespace AdaptiveArena
             return this == &other;
         }
 
-    private:
+    protected:
         std::string m_secretKey;
         std::filesystem::path m_logPath;
         size_t m_hardLimit;

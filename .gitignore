@@ -27,3 +27,8 @@ compile_commands.json
 
 # Dependencies
 _deps/
+docs/ai_rules.md
+docs/experiment_log.md
+docs/project_info.md
+docs/style_sample.cpp
+docs/style_sample.h

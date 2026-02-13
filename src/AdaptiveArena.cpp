@@ -1,8 +1,6 @@
-// Added by Gemini3, on 26.02.11
-// Edited by PJS, on 26.02.11
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #include "AdaptiveArena.h"
 #include "../src/InternalResource.h"
+#include "../src/UltrasoundArena.h"
 #include <stdexcept>
 
 namespace AdaptiveArena 
@@ -17,9 +15,16 @@ namespace AdaptiveArena
             throw std::runtime_error("Secret key is required for integrity verification.");
         }
 
-        // InternalResource를 생성하여 반환 (Sweet Case First)
-        // std::unique_ptr<InternalResource>는 std::unique_ptr<Resource>로 암시적 변환 가능
-        return std::make_unique<InternalResource>(m_secretKey, m_logPath, m_hardLimit);
+        if (m_mode == ArenaMode::UltrasoundRF) 
+        {
+            // 초음파 모드 리소스 생성
+            return std::make_unique<UltrasoundArena>(m_secretKey, m_logPath, m_hardLimit, m_gpuDirect);
+        }
+        else 
+        {
+            // 일반 모드 리소스 생성
+            return std::make_unique<InternalResource>(m_secretKey, m_logPath, m_hardLimit);
+        }
     }
 
 } // namespace AdaptiveArena

@@ -44,9 +44,22 @@ namespace AdaptiveArena
          */
         void SetState(size_t size);
 
+        /**
+         * @brief  실시간 지터(처리 지연) 정보를 입력받아 권장 슬롯 수를 업데이트합니다.
+         * @param  currentLag  현재 큐에 쌓여있는 미처리 프레임 수
+         */
+        void UpdateJitter(size_t currentLag);
+
+        /**
+         * @brief  학습된 권장 링 버퍼 슬롯 수를 반환합니다.
+         * @return size_t  지터를 흡수하기 위한 최적의 슬롯 개수
+         */
+        size_t GetPredictedSlotCount() const;
+
     private:
         double m_alpha;
         size_t m_predictedSize;
+        size_t m_predictedSlots;
     };
 
 } // namespace AdaptiveArena

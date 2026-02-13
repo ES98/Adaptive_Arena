@@ -68,6 +68,7 @@ set(SOURCE_FILES
     src/AdaptiveArena.cpp
     src/LearningEngine.cpp
     src/Visualizer.cpp
+    src/UltrasoundArena.cpp
 )
 
 # Executable
