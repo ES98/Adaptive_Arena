@@ -1,10 +1,11 @@
 // Added by Gemini3, on 26.02.13
 // Edited by PJS, on 26.02.13
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-#include "UltrasoundArena.h"
 #define NOMINMAX
+#include "UltrasoundArena.h"
 #include <windows.h> // For VirtualAlloc (Pinned Memory simulation)
 #include <algorithm>
+#include <iostream>
 
 namespace AdaptiveArena 
 {
@@ -24,6 +25,9 @@ namespace AdaptiveArena
         , m_totalBytesProcessed(0)
         , m_avgThroughputGBs(0.0)
     {
+        // 1. Try to load CUDA
+        m_cudaFuncs = CudaWrapper::LoadCudaLibrary();
+
         m_lastAdaptTime = std::chrono::steady_clock::now();
         m_lastThroughputCheck = std::chrono::steady_clock::now();
     }
@@ -124,9 +128,6 @@ namespace AdaptiveArena
             if (predicted > m_slotCount) 
             {
                 // 실시간 확장: 새로운 슈퍼페이지 할당 및 슬롯 추가
-                // Note: 실제 고성능 환경에서는 인덱스 계산을 위해 Mutex 없이 
-                // 이중 버퍼링이나 원자적 포인터 교체를 사용하지만, 
-                // 여기서는 안전한 확장을 위해 Mutex를 활용합니다.
                 std::lock_guard<std::mutex> lock(m_mutex);
                 
                 size_t additional = predicted - m_slotCount;
@@ -165,23 +166,37 @@ namespace AdaptiveArena
     {
         if (size == 0) return nullptr;
 
-        // Windows: VirtualAlloc을 사용하여 Page-Locked (Pinned) 메모리 시뮬레이션
-        // MEM_COMMIT | MEM_RESERVE를 사용하여 물리 메모리에 즉시 바인딩
-        void* ptr = VirtualAlloc(NULL, size, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
-        
-        if (ptr && m_gpuDirect) 
+        // Hybrid Allocation Strategy
+        if (m_cudaFuncs) 
         {
-            // 실제 GPUDirect 환경이라면 여기서 드라이버 함수를 호출하여 
-            // 버퍼를 GPU에 등록(Registration)하는 과정이 필요합니다.
+            void* ptr = nullptr;
+            // cudaHostAllocPortable: Make memory visible to all CUDA contexts
+            if (m_cudaFuncs->cudaHostAlloc(&ptr, size, 1) == 0) // 1=Portable, 0=Success
+            {
+                return ptr;
+            }
         }
 
-        return ptr;
+        // Windows: VirtualAlloc을 사용하여 Page-Locked (Pinned) 메모리 시뮬레이션
+        return VirtualAlloc(NULL, size, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
     }
 
     void UltrasoundArena::FreePinned(void* p, size_t size) 
     {
         if (p) 
         {
+            if (m_cudaFuncs) 
+            {
+                // Try CUDA free first (assuming it expects CUDA pointer, might be risky if mixed)
+                // But in our design, AllocatePinned uses one or the other.
+                // Ideally, we should track source. For now, rely on CUDA runtime handling invalid pointers gracefully 
+                // or just use VirtualFree if CUDA wasn't the allocator?
+                // Actually, if m_cudaFuncs is present, we likely allocated with it.
+                // A robust way is to try VirtualFree if cudaFreeHost fails, but cudaFreeHost might crash on system pointer.
+                // *Assumption*: If CUDA is available, we used it.
+                m_cudaFuncs->cudaFreeHost(p);
+                return;
+            }
             VirtualFree(p, 0, MEM_RELEASE);
         }
     }

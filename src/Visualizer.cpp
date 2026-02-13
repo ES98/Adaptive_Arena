@@ -2,6 +2,7 @@
 // Edited by PJS, on 26.02.11
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #include "Visualizer.h"
+#include "UltrasoundArena.h" // Added for dynamic_cast
 #include <stdexcept>
 
 namespace AdaptiveArena 
@@ -91,6 +92,23 @@ namespace AdaptiveArena
             
             ImGui::TextColored(isUltrasound ? ImVec4(0.2f, 0.8f, 1.0f, 1.0f) : ImVec4(1.0f, 0.8f, 0.2f, 1.0f), 
                               "Mode: %s", isUltrasound ? "Ultrasound RF (Zero-Copy)" : "Generic PMR");
+
+            if (isUltrasound) 
+            {
+                // check if CUDA is active by casting to UltrasoundArena
+                auto* usArena = dynamic_cast<UltrasoundArena*>(arena);
+                if (usArena && usArena->IsCudaActive()) 
+                {
+                    ImGui::SameLine();
+                    ImGui::TextColored(ImVec4(0.2f, 1.0f, 0.2f, 1.0f), " [CUDA ENABLED]");
+                }
+                else 
+                {
+                    ImGui::SameLine();
+                    ImGui::TextColored(ImVec4(1.0f, 1.0f, 0.2f, 1.0f), " [OS NATIVE]");
+                }
+            }
+            
             ImGui::Separator();
 
             // 1. Statistics Summary

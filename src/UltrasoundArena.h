@@ -4,6 +4,7 @@
 #pragma once
 
 #include "InternalResource.h"
+#include "CudaWrapper.h" // Added for Hybrid Allocation
 #include <vector>
 #include <atomic>
 #include <chrono>
@@ -72,6 +73,9 @@ namespace AdaptiveArena
 
         double GetAverageThroughputGBs() const override { return m_avgThroughputGBs; }
         bool IsPoolWarmedUp() const override { return m_slotCount >= 4; }
+        
+        // CUDA Status
+        bool IsCudaActive() const { return m_cudaFuncs.has_value(); }
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // PMR Overrides (Internal Logic)
@@ -112,6 +116,9 @@ namespace AdaptiveArena
 
         // Monitoring thread or point-in-time check
         std::chrono::steady_clock::time_point m_lastAdaptTime;
+        
+        // Dynamic CUDA Support
+        std::optional<CudaFunctions> m_cudaFuncs;
     };
 
 } // namespace AdaptiveArena
